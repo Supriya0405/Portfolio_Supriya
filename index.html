@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supriya DV | Full-Stack & Cloud Developer Portfolio</title>
+  <meta name="description"
+    content="Professional portfolio of Supriya DV, featuring experience in AWS cloud deployment, MERN stack, data quality automation, and competitive coding stats.">
+  <meta name="keywords"
+    content="Supriya DV, Cloud Developer, AWS Intern, Full-Stack Engineer, MERN Stack, DQ-FIX Agent, CuraAI, Portfolio">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Ambient background glow elements -->
+  <div class="glow-blob blob-1"></div>
+  <div class="glow-blob blob-2"></div>
+  <div class="glow-blob blob-3"></div>
+
+  <!-- Header Section -->
+  <header id="main-header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <div class="logo-icon">S</div>
+        <span>Supriya DV</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#aws-visualizer">Cloud Visualizer</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="btn-terminal-toggle" id="terminal-toggle-btn" aria-label="Toggle Developer Terminal">
+        <i class="fa-solid fa-terminal"></i>
+        <span>>_ Terminal</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="hero-badge-pulse"></span>
+          <span>Open for Full-Stack and Cloud Opportunities</span>
+        </div>
+        <h1 class="hero-title">Elevating Code to the <span class="gradient-text">Cloud</span></h1>
+        <p class="hero-subtitle">
+          Hi, I'm <strong>Supriya DV</strong>. I specialize in designing secure cloud architectures, deploying scalable
+          MERN stack web applications, and building AI-driven software agents.
+        </p>
+        <div class="hero-buttons">
+          <a href="#aws-visualizer" class="btn btn-primary" id="btn-explore-cloud">
+            <i class="fa-solid fa-cloud-arrow-up"></i> Explore Cloud Labs
+          </a>
+          <button class="btn btn-secondary" id="btn-hero-terminal">
+            <i class="fa-solid fa-terminal"></i> Launch Terminal
+          </button>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/supriya-v-026002287/" target="_blank" class="social-icon"
+            id="link-linkedin" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Supriya0405" target="_blank" class="social-icon" id="link-github"
+            aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:supriyavenkatasalapathi205@gmail.com" class="social-icon" id="link-email"
+            aria-label="Email Supriya"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-visual-card">
+          <img src="profile.jpg" alt="Supriya DV Profile" class="hero-avatar">
+          <h3>Supriya DV</h3>
+          <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.85rem; margin-top: 0.25rem;">
+            @Full-Stack & Cloud Engineer</p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 1rem;">Sri Eshwar College of
+            Engineering</p>
+
+          <div class="hero-visual-stats">
+            <div class="h-stat">
+              <span class="h-stat-val">200+</span>
+              <span class="h-stat-lbl">LeetCode</span>
+            </div>
+            <div class="h-stat" style="border-left: 1px solid var(--card-border); padding-left: 1.5rem;">
+              <span class="h-stat-val">250+</span>
+              <span class="h-stat-lbl">SkillRack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Dashboard Section -->
+  <section class="stats-dashboard reveal" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- Stat Card 1 -->
+        <div class="stat-card" id="stat-leetcode">
+          <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="stat-info">
+            <span class="stat-number">200+</span>
+            <span class="stat-label">LeetCode Problems Solved</span>
+          </div>
+        </div>
+        <!-- Stat Card 2 -->
+        <div class="stat-card" id="stat-skillrack">
+          <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="stat-info">
+            <span class="stat-number">250+</span>
+            <span class="stat-label">SkillRack Challenges Solved</span>
+          </div>
+        </div>
+        <!-- Stat Card 3 -->
+        <div class="stat-card" id="stat-education">
+          <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="stat-info">
+            <span class="stat-number">7.3</span>
+            <span class="stat-label">CGPA (Vth-Sem)</span>
+            <span class="stat-sub">Sri Eshwar College of Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-sec reveal" id="skills">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Talent Stack</span>
+        <h2 class="section-title">Technical Expertise</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skills-text-part">
+          <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Categorized Abilities</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+            Click on any category to explore the languages, libraries, systems, and tools I use to build, secure, and
+            deploy solutions.
+          </p>
+          <div class="skills-category-tabs">
+            <button class="skills-tab-btn active" data-category="languages" id="tab-languages">
+              <span>Programming Languages</span>
+              <span class="tab-indicator"></span>
+            </button>
+            <button class="skills-tab-btn" data-category="frameworks" id="tab-frameworks">
+              <span>Technologies & Frameworks</span>
+              <span class="tab-indicator"></span>
+            </button>
+            <button class="skills-tab-btn" data-category="cloud-db" id="tab-clouddb">
+              <span>Cloud & Databases</span>
+              <span class="tab-indicator"></span>
+            </button>
+            <button class="skills-tab-btn" data-category="tools" id="tab-tools">
+              <span>Tools & Core Concepts</span>
+              <span class="tab-indicator"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="skills-display-panel">
+          <div class="skills-display-title" id="skills-panel-title">
+            <i class="fa-solid fa-code"></i>
+            <span>Programming Languages</span>
+          </div>
+          <div class="skills-list-items" id="skills-panel-items">
+            <!-- Dynamic skills load here via app.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Timeline Section -->
+  <section class="experience-sec reveal" id="experience">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Career Roadmap</span>
+        <h2 class="section-title">Professional Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item" id="exp-cloud-intern">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Cloud Intern</h3>
+                <div class="timeline-company"></div>
+              </div>
+              <span class="timeline-date">2025</span>
+            </div>
+            <p class="timeline-desc">
+              Designed and managed cloud infrastructure using AWS services enabling secure application deployment and
+              resource management. Implemented networking, monitoring, and performance optimization strategies to
+              improve scalability, reliability, and cost-efficiency.
+            </p>
+            <div class="timeline-tech-stack">
+              <span class="timeline-tech-badge">AWS EC2</span>
+              <span class="timeline-tech-badge">AWS S3</span>
+              <span class="timeline-tech-badge">AWS RDS</span>
+              <span class="timeline-tech-badge">AWS IAM</span>
+              <span class="timeline-tech-badge">AWS VPC</span>
+              <span class="timeline-tech-badge">CloudFront</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item" id="exp-fullstack-intern">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Full-Stack Intern</h3>
+                <div class="timeline-company">Better Tomorrow</div>
+              </div>
+              <span class="timeline-date">2025</span>
+            </div>
+            <p class="timeline-desc">
+              Developed and maintained dynamic web applications using the MERN stack by building responsive user
+              interfaces, implementing backend business logic, and integrating RESTful APIs for efficient data exchange.
+              Collaborated on end-to-end application development, ensuring seamless user experience and optimized
+              database operations.
+            </p>
+            <div class="timeline-tech-stack">
+              <span class="timeline-tech-badge">MongoDB</span>
+              <span class="timeline-tech-badge">ExpressJS</span>
+              <span class="timeline-tech-badge">ReactJS</span>
+              <span class="timeline-tech-badge">NodeJS</span>
+              <span class="timeline-tech-badge">REST APIs</span>
+              <span class="timeline-tech-badge">TailwindCSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive AWS Cloud Architecture Visualizer Section -->
+  <section class="cloud-visualizer-sec reveal" id="aws-visualizer">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Visual Labs</span>
+        <h2 class="section-title">Interactive Cloud Architectures</h2>
+      </div>
+
+      <p style="text-align: center; max-width: 700px; margin: -2rem auto 3rem auto; color: var(--text-secondary);">
+        Interactive visual display of my AWS deployment architecture for the Student Management System. Click on any
+        network node to inspect details and simulate active request routing!
+      </p>
+
+      <div class="cloud-layout">
+        <!-- SVG Canvas and Nodes -->
+        <div class="cloud-canvas-card" id="canvas-card">
+          <div class="cloud-canvas-title">
+            <i class="fa-solid fa-network-wired"></i>
+            <span>Active Deployments: Student Management System</span>
+          </div>
+
+          <div class="cloud-interactive-diagram" id="diagram-container">
+            <!-- Dynamic network lines inside SVG -->
+            <svg class="network-svg-layer" id="network-lines" viewBox="0 0 800 380">
+              <!-- Background lines -->
+              <path class="network-link" id="link-cf-vpc" d="M 64 152 L 240 152" />
+              <path class="network-link" id="link-vpc-ec1" d="M 380 120 L 360 76" />
+              <path class="network-link" id="link-vpc-ec2" d="M 380 228 L 360 228" />
+              <path class="network-link" id="link-ec1-rds" d="M 414 76 L 560 152" />
+              <path class="network-link" id="link-ec2-rds" d="M 414 228 L 560 152" />
+              <path class="network-link" id="link-ec1-s3" d="M 414 76 L 624 38" />
+            </svg>
+
+            <!-- Nodes -->
+            <!-- CloudFront CDN -->
+            <div class="aws-node node-cloudfront active" data-node="cloudfront" id="aws-node-cloudfront">
+              <i class="fa-solid fa-bolt aws-node-icon"></i>
+              <span class="aws-node-lbl">CloudFront CDN</span>
+            </div>
+
+            <!-- VPC border container representation -->
+            <div class="aws-node node-vpc aws-vpc-box" data-node="vpc" id="aws-node-vpc">
+              <span class="aws-node-lbl">VPC Subnets (Public & Private)</span>
+            </div>
+
+            <!-- EC2 Server 1 (Apache) inside VPC area -->
+            <div class="aws-node node-ec2-1" data-node="ec2-1" id="aws-node-ec2-1">
+              <i class="fa-solid fa-server aws-node-icon"></i>
+              <span class="aws-node-lbl">EC2 (Apache Server)</span>
+            </div>
+
+            <!-- EC2 Server 2 (App Logic) -->
+            <div class="aws-node node-ec2-2" data-node="ec2-2" id="aws-node-ec2-2">
+              <i class="fa-solid fa-gears aws-node-icon"></i>
+              <span class="aws-node-lbl">EC2 (App Server)</span>
+            </div>
+
+            <!-- Relational Database RDS -->
+            <div class="aws-node node-rds" data-node="rds" id="aws-node-rds">
+              <i class="fa-solid fa-database aws-node-icon"></i>
+              <span class="aws-node-lbl">RDS MySQL</span>
+            </div>
+
+            <!-- Simple Storage S3 -->
+            <div class="aws-node node-s3" data-node="s3" id="aws-node-s3">
+              <i class="fa-solid fa-folder-open aws-node-icon"></i>
+              <span class="aws-node-lbl">S3 Asset Storage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Details Panel -->
+        <div class="cloud-side-panel">
+          <div class="cloud-info-card" id="cloud-info-card">
+            <div class="cloud-info-header">
+              <h3 class="cloud-info-title" id="info-node-title">AWS CloudFront</h3>
+              <span class="cloud-info-subtitle" id="info-node-subnet">Global Edge Locations</span>
+            </div>
+            <p class="cloud-info-body" id="info-node-desc">
+              Global content delivery network (CDN) caches static website files (HTML, CSS, JS) at Edge locations to
+              minimize server response times and deliver optimal performance.
+            </p>
+
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: white;">Configuration Configurations:</h4>
+            <ul class="cloud-info-features" id="info-node-features">
+              <li><i class="fa-solid fa-shield-halved"></i> SSL Certificate HTTPS Integration</li>
+              <li><i class="fa-solid fa-gauge-high"></i> Asset Caching TTL Policy Tuning</li>
+            </ul>
+
+            <div class="cloud-info-metrics" id="info-node-metrics">
+              <div class="cloud-metric">
+                <span class="cloud-metric-val">120ms</span>
+                <span class="cloud-metric-lbl">Avg Response Time</span>
+              </div>
+              <div class="cloud-metric" style="border-left: 1px solid var(--card-border); padding-left: 1rem;">
+                <span class="cloud-metric-val">99.99%</span>
+                <span class="cloud-metric-lbl">Availability SLAs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section class="projects-sec reveal" id="projects">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Practical Solutions</span>
+        <h2 class="section-title">Core Projects Showcase</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" id="proj-student-management">
+          <div class="project-card-header">
+            <span class="project-card-date">March 2026</span>
+            <div class="project-card-links">
+              <a href="https://github.com/Supriya0405/aws-student-management-system" target="_blank"
+                class="project-btn-icon" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-card-title">Student Management System</h3>
+          <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.75rem;">Cloud Infrastructure
+            & App Dev</p>
+          <p class="project-card-desc">
+            Built and deployed a cloud-native Student Management System leveraging AWS services for secure and scalable
+            application hosting. Implemented EC2 web nodes integrated within custom VPC subnets (public/private boundary
+            subnets) and AWS RDS MySQL clusters for isolated, secure data layers.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">AWS EC2</span>
+            <span class="project-tag">AWS RDS</span>
+            <span class="project-tag">VPC Routing</span>
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">MySQL</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" id="proj-curaa-ai">
+          <div class="project-card-header">
+            <span class="project-card-date">January 2026</span>
+            <div class="project-card-links">
+              <a href="https://github.com/Supriya0405/curaai" target="_blank" class="project-btn-icon"
+                aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-card-title">CuraAI - Medical Assistant</h3>
+          <p style="color: var(--accent-indigo); font-family: var(--font-mono); font-size: 0.75rem;">AI Medical Chatbot
+            System</p>
+          <p class="project-card-desc">
+            Designed and developed a voice-enabled AI healthcare assistant capable of analyzing user symptoms and
+            generating contextual medical guidance. Integrated Speech-to-Text and Text-to-Speech modules, managed local
+            history schemas using SQLite and MongoDB, and built a web UI to deliver real-time assistance.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">LLM/API</span>
+            <span class="project-tag">Speech-to-Text</span>
+            <span class="project-tag">MongoDB</span>
+            <span class="project-tag">Gradio</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" id="proj-dq-fix">
+          <div class="project-card-header">
+            <span class="project-card-date">June 2026</span>
+            <div class="project-card-links">
+              <a href="https://github.com/Supriya0405/DQ-Fix" target="_blank" class="project-btn-icon"
+                aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-card-title">DQ-FIX Agent</h3>
+          <p style="color: var(--accent-purple); font-family: var(--font-mono); font-size: 0.75rem;">Data Quality AI
+            Agent</p>
+          <p class="project-card-desc">
+            Developed an AI-driven Data Quality Management System for automated data validation, profiling, and
+            cleansing. Implemented a configurable YAML rule engine, LLM-based rule generation, anomaly detection, and
+            auto-repair mechanisms with audit tracking and real-time dashboard visualizations.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Streamlit</span>
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">Groq LLM</span>
+            <span class="project-tag">SQLite</span>
+            <span class="project-tag">YAML</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="certs-sec reveal" id="certifications">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Verified Skills</span>
+        <h2 class="section-title">Certifications Gallery</h2>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="certs-filter-bar">
+        <button class="filter-btn active" data-filter="all" id="btn-cert-all">All</button>
+        <button class="filter-btn" data-filter="aws" id="btn-cert-aws">AWS</button>
+        <button class="filter-btn" data-filter="deloitte" id="btn-cert-deloitte">Deloitte</button>
+        <button class="filter-btn" data-filter="hackerrank" id="btn-cert-hackerrank">HackerRank</button>
+        <button class="filter-btn" data-filter="udemy" id="btn-cert-udemy">Udemy</button>
+      </div>
+
+      <div class="certs-grid" id="certs-container">
+        <!-- Dynamic certification cards populated via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <footer class="footer-sec" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-info reveal">
+        <a href="#hero" class="footer-logo">Supriya DV</a>
+        <p class="footer-desc">
+          Building high-performance cloud applications and robust software systems. Feel free to reach out for
+          internship collaborations, coding projects, or full-time opportunities.
+        </p>
+
+        <div class="footer-contact-details">
+          <a href="mailto:supriyavenkatasalapathi205@gmail.com" class="contact-item">
+            <i class="fa-regular fa-envelope"></i>
+            <span>supriyavenkatasalapathi205@gmail.com</span>
+          </a>
+          <a href="tel:9865988663" class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 98659 88663</span>
+          </a>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Coimbatore, Tamil Nadu, India</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Card -->
+      <div class="footer-form-card reveal">
+        <h3 class="form-title">Send a Message</h3>
+        <form id="contact-form" action="#"
+          onsubmit="event.preventDefault(); alert('Message sent! Supriya will contact you shortly.');">
+          <div class="form-group">
+            <label class="form-label" for="form-name">Name</label>
+            <input type="text" class="form-input" id="form-name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-email">Email</label>
+            <input type="email" class="form-input" id="form-email" placeholder="name@gmail.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-msg">Message</label>
+            <textarea class="form-input form-textarea" id="form-msg" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem;" id="btn-submit-contact">
+            <i class="fa-regular fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Supriya DV. All Rights Reserved. Built with pure HTML, CSS, and JS.</p>
+    </div>
+  </footer>
+
+  <!-- Interactive Terminal Drawer -->
+  <div class="terminal-drawer" id="terminal-drawer">
+    <div class="terminal-header" id="terminal-header" title="Click to collapse/expand">
+      <div class="terminal-title-container">
+        <i class="fa-solid fa-terminal" style="color: var(--accent-cyan); font-size: 0.85rem;"></i>
+        <span class="terminal-title-text">supriya@aws-cloud:~ (bash)</span>
+      </div>
+      <div class="terminal-window-buttons">
+        <span class="t-btn t-btn-min" id="terminal-minimize-btn"></span>
+        <span class="t-btn t-btn-max" id="terminal-maximize-btn"></span>
+        <span class="t-btn t-btn-close" id="terminal-close-btn"></span>
+      </div>
+    </div>
+    <div class="terminal-body" id="terminal-body">
+      <div class="terminal-welcome">
+        <p>Welcome to Supriya's Cloud Terminal (v2.6.0-LTS)</p>
+        <p>System status: <span style="color: #10b981;">ONLINE</span> | Active Subnet: <span
+            style="color: var(--accent-cyan);">10.0.1.0/24 (public)</span></p>
+        <p>Type <span style="color: var(--accent-indigo); font-weight: bold;">help</span> to see a list of commands.</p>
+      </div>
+      <div class="terminal-output" id="terminal-history">
+        <!-- Interactive outputs will append here -->
+      </div>
+      <div class="terminal-prompt-line">
+        <span class="terminal-prompt">supriya@aws-cloud:~$</span>
+        <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" autofocus
+          aria-label="Terminal Input">
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript File -->
+  <script src="app.js"></script>
+</body>
+
+</html>
